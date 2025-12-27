@@ -1,37 +1,48 @@
 # Python
+__pycache__/
 *.py[cod]
 *$py.class
 *.so
-__pycache__/
-*.egg
-*.egg-info/
-dist/
-build/
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # Virtual Environment
 venv/
 env/
 ENV/
-.venv
+env.bak/
+venv.bak/
 
 # Django
 *.log
 *.pot
 *.pyc
+local_settings.py
 db.sqlite3
 db.sqlite3-journal
-media/uploaded_videos/
-staticfiles/
-static/CACHE/
-
-# Database
-*.db
 fire_detection_system.db
-fire_detection_enhanced.db
 
-# Environment variables
+# Environment Variables
 .env
+.env.local
+.env.*.local
 
 # IDE
 .vscode/
@@ -43,21 +54,20 @@ fire_detection_enhanced.db
 # OS
 .DS_Store
 Thumbs.db
-desktop.ini
+
+# Media Files (uploaded by users)
+backend/media/snapshots/
+backend/media/incident_videos/
+backend/media/uploaded_videos/
+backend/media/cctv_recordings/
 
 # Logs
-logs/
+backend/logs/
 *.log
 
-# AI Models (if large)
-# yolov8n.pt
+# Database
+*.sqlite3
+*.db
 
-# Media uploads
-media/uploaded_videos/*
-media/incident_snapshots/*
-!media/.gitkeep
-
-# Temporary files
-*.tmp
-*.bak
-*.cache
+# YOLOv8 weights (large file)
+# backend/yolov8n.pt
