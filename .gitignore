@@ -4,6 +4,10 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
+.venv/
+venv/
+ENV/
 build/
 develop-eggs/
 dist/
@@ -38,8 +42,10 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 fire_detection_system.db
+/media
+/staticfiles
 
-# Environment Variables
+# Environment variables
 .env
 .env.local
 .env.*.local
@@ -54,6 +60,7 @@ fire_detection_system.db
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Media Files (uploaded by users)
 backend/media/snapshots/
@@ -63,6 +70,7 @@ backend/media/cctv_recordings/
 
 # Logs
 backend/logs/
+logs/
 *.log
 
 # Database
@@ -70,4 +78,16 @@ backend/logs/
 *.db
 
 # YOLOv8 weights (large file)
+*.pt
+yolov8n.pt
 # backend/yolov8n.pt
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Backup files
+*.backup
+*.bak
